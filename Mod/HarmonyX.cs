@@ -7,6 +7,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Verse;
 
 namespace Lilly
 {
@@ -48,8 +49,12 @@ namespace Lilly
                 var argumentTypes = patchAttr.info?.argumentTypes;
                 //var argumentVariations = patchAttr.info?.argumentVariations;
 
+                MethodBase original = null;
                 // 원본 메서드 찾기
-                var original = AccessTools.Method(targetType, targetMethodName, argumentTypes);
+                if (targetMethodName == ".ctor")
+                    original = AccessTools.Constructor(targetType, argumentTypes);
+                else
+                    original = AccessTools.Method(targetType, targetMethodName, argumentTypes);
                 if (original == null)
                 {
                     MyLog.Error($"원본 메서드 찾기 실패: <color=#00FF00FF>{targetType.Name}</color>.<color=#FF8000FF>{targetMethodName}</color>");

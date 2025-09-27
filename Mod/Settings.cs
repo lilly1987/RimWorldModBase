@@ -9,6 +9,7 @@ namespace Lilly
 
         public override void ExposeData()
         {
+            if (Scribe.mode != LoadSaveMode.LoadingVars && Scribe.mode != LoadSaveMode.Saving) return;
             MyLog.Message($"<color=#00FF00FF>{Scribe.mode}</color>");
             base.ExposeData();
             Scribe_Values.Look(ref onDebug, "onDebug", false);
