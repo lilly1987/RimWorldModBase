@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace Lilly
+namespace Lilly.MyMod
 {
 
     public class ModUI : Mod

@@ -1,12 +1,15 @@
 ﻿using Verse;
 
-namespace Lilly
+namespace Lilly.MyMod
 {
     public class Settings : ModSettings
     {
         public static bool onDebug = true;
         public static bool onPatch = true;
 
+        // LoadingVars
+        // ResolvingCrossRefs
+        // PostLoadInit
         public override void ExposeData()
         {
             if (Scribe.mode != LoadSaveMode.LoadingVars && Scribe.mode != LoadSaveMode.Saving) return;

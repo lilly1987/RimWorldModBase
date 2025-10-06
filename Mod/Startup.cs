@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Lilly
+namespace Lilly.MyMod
 {
     // 주의 - ModUI 보다 나중에 실행됨
     [StaticConstructorOnStartup]

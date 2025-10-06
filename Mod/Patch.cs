@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Lilly
+namespace Lilly.MyMod
 {
     public static class Patch
     {
@@ -17,7 +17,7 @@ namespace Lilly
 
         public static void OnPatch(bool repatch = false)
         {
-            if (repatch)
+            if (repatch || !Settings.onPatch)
             {
                 Unpatch();
             }
