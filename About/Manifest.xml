@@ -1,13 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Manifest>
-  <identifier>Lilly Mod</identifier>
-  <version>1.6.0</version>
-  <dependencies />
-  <incompatibleWith />
-  <loadBefore />
-  <loadAfter />
-  <!-- <manifestUri>https://raw.githubusercontent.com/emipa606/CaptureThem/master/About/Manifest.xml</manifestUri> -->
-  <downloadUri>https://github.com/lilly1987?tab=repositories</downloadUri>
+  <identifier>Lilly.RimWorldModTemplate</identifier>
+  <version>1.0.0</version>
+  <name>RimWorld Mod Template</name>
+  <author>Lilly</author>
+  <packageId>Lilly.RimWorldModTemplate</packageId>
 </Manifest>
-
- 

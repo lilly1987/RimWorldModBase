@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Lilly_TemplateSampleResource</defName>
+    <label>template sample resource</label>
+    <description>A sample item Def demonstrating the XML folder layout.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Steel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.5</Mass>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories><li>ResourcesRaw</li></thingCategories>
+  </ThingDef>
+</Defs>
